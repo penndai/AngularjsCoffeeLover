@@ -8,7 +8,7 @@ angular.module('myApp.view1', ['ngRoute'])
     controller: 'View1Ctrl'
   });
 }])
-.controller('View1Ctrl', ['$scope','myService','rateService',function($scope, myService) {
+.controller('View1Ctrl', ['$scope','myService',function($scope, myService) {
     $scope.preconfVariable="test";
     $scope.preconfVariable = myService.getConfigVariable();
 }]);

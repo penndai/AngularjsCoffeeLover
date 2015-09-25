@@ -18,7 +18,7 @@ factory('rateService', function($q, $http) {
            // console.log(url);
 
             $http.jsonp(url).success(function(json) {
-                console.log(JSON.stringify(json));
+                //console.log(JSON.stringify(json));
                 if (json.query.results) {
                     var quotes = json.query.results.quote;
                     // filter + format quotes here if you want
@@ -37,7 +37,7 @@ factory('rateService', function($q, $http) {
            // console.log(url);
 
             $http.jsonp(url).success(function(json) {
-                console.log(JSON.stringify(json));
+                //console.log(JSON.stringify(json));
                 var quotes = json.query.results.quote;
                 // filter + format quotes here if you want
                 callback(quotes);
