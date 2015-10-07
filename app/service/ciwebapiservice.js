@@ -5,7 +5,8 @@ angular.module('pdiService',['ngResource'])
 .factory('coffeeinvoiceservice',function( $q, $http){
     return{
         getCustomer:function(callback,id){
-            var url = "http://localhost:8947/api/CoffeeInvoiceApi";
+            var url = "http://coffeeinvoice.azurewebsites.net/api/CoffeeInvoiceApi"
+           // var url = "http://localhost:8947/api/CoffeeInvoiceApi";
             var custom = {customID:id, customName:"", title:""};
           //  console.log(custom);
             $http.get(url, { params: {id:custom.customID}}).success(function (data, status, headers, config) {

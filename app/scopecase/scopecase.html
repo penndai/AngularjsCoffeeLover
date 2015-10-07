@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h3>Your Object Order</h3>
+<div ng-repeat='item in items' >
+    <span>{{item.title}}</span>
+    <input ng-model='item.quantity' >
+    <span>{{item.price | currency}}</span>
+    <span>{{item.price * item.quantity | currency}}</span>
+    <button ng-click="remove($index)" >Remove</button>
+</div>
+
+<span>Another repeat test scope share</span>
+<h3>Your another object Order share scope object array</h3>
+<div ng-repeat='item in items' >
+    <span>{{item.title}}</span>
+    <input ng-model='item.quantity' >
+    <span>{{item.price | currency}}</span>
+    <span>{{item.price * item.quantity | currency}}</span>
+    <button ng-click="remove($index)" >Remove</button>
+</div>
+
+<span>Primitive list</span>
+
+<div ng-repeat='item in primitiveitems' >
+    <span>item</span>
+    <input ng-model='item' >
+    <button ng-click="remove($index)" >Remove</button>
+</div>
+<span>Another Primitive list</span>
+<div ng-repeat='item in primitiveitems' >
+    <span>item</span>
+    <input ng-model='item' >
+    <button ng-click="remove($index)" >Remove</button>
+</div>
+</body>
+</html>

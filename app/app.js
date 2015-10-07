@@ -6,6 +6,7 @@ angular.module('myApp', [
   'ngRoute',
   'pdiService',
   'myApp.webRate',
+  'myApp.scopecase',
   'myApp.coffeeinvoice',
   'myApp.view1',
   'myApp.view2',
